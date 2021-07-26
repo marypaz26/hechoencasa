@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaPrincipal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/PaginaPrincipal.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../RECURSOS/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/PaginaPrincipal.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Descripcion.html">¿Qué es la cocina?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Pasos.html">Primeros pasos para cocinar</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <label for="start">Fecha</label>
+          <input type="date" id="start" name="trip-start"
+       value="2021-07-25"
+       min="2021-07-24" max="2030-12-31">
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../RECURSOS/pexels-ella-olsson-1640777.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../RECURSOS/pexels-jess-bailey-designs-853006.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../RECURSOS/pexels-roman-odintsov-4871119.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../RECURSOS/pexels-daria-shevtsova-704971 (1).jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../RECURSOS/pexels-lisa-1351238.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../RECURSOS/pexels-jane-d-1092730 (1).jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <p>Ha llegado el momento de dar tus primeros pasos en esa estancia de la casa aún desconocida para vos: la cocina. 
+      La definición de cocinar es preparar los alimentos cociéndolos sobre el fuego. Esto tiene como finalidad transformar dichos alimentos con mecanismos o técnicas. Así se facilita la masticación, la digestión, se realza el sabor y se eliminan los riesgos de ingerir elementos nocivos para el cuerpo.
+    </p>
+  </div>
+
+  <div id="columns" class="container">
+    <div class="row">
+      <div class="col">
+        <img src="../RECURSOS/imagen1.png" class="img-thumbnail" alt="">
+
+      </div>
+      <div id="imageone" class="col">
+        <h6>Conocé sobre la intervención y transformación de los alimentos para hacerlos atractivos a la hora de consumirlos.</h6>
+        <button type="button" class="btn btn-danger"><a class="nav-link text-white" href="../HTML/Descripcion.html">¿Qué es la cocina?</a>
+        </button>
+      </div>
+    </div>
+    <div id="ginger" class="row">
+      <div id="imagetwo" class="col">
+        <h6>Para aquellos que nunca han metido las manos en la masa, con una dosis de interés, algo de paciencia y nuestros consejos, el reto de aprender a cocinar es pan comido.</h6>
+        <button type="button" class="btn btn-danger"><a class="nav-link text-white" href="../HTML/Pasos.html">Primeros pasos para cocinar</a>
+        </button>
+      </div>
+      <div class="col">
+        <img src="../RECURSOS/imagen2.png" class="img-thumbnail" alt="">
+      </div>
+    </div>
+  </div>
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Gracias!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Apellidos</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Gracias!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomMail" class="form-label">Correo</label>
+      <div class="input-group has-validation">
+      
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Por favor ingrese un nombre de usuario.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Aceptar términos y condiciones 
+        </label>
+        <div class="invalid-feedback">
+          Debes aceptar los términos y condiciones.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-danger" type="submit">Suscribirse</button>
+    </div>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
